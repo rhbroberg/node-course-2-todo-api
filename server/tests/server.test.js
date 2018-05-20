@@ -1,3 +1,5 @@
+"use strict";
+
 const expect = require('expect');
 const request = require('supertest');
 
@@ -22,6 +24,10 @@ describe('POST /todos', () => {
             })
             .end((err, res) => {
                 if (err) {
+                    if (res) {
+                        console.log(res);
+                    }
+
                     return done(err);
                 }
 
