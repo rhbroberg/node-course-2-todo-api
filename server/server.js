@@ -1,9 +1,9 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 
-var { mongoose } = require('./db/mongoose');
+var { mongoose } = require('./db/mongoose'); // eslint-disable-line no-unused-vars
 var { Todo } = require('./models/todo');
-var { User } = require('./models/user');
+// var { User } = require('./models/user');
 const { ObjectID } = require('mongodb');
 
 var app = express();
@@ -42,7 +42,7 @@ app.get('/todos/:id', (req, res) => {
             return res.sendStatus(404);
         }
         res.status(200).send({ todo });
-    }).catch((e) => {
+    }).catch(() => {
         res.sendStatus(400);
     });
 
