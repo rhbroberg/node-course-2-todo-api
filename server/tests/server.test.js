@@ -93,14 +93,14 @@ describe('GET /todos/:id', () => {
     it('should return a 404 if todo not found', (done) => {
         // valid id but not found
         // make sure get a 404 back
-        var fakeId = new ObjectId('5b07527b90122ad946521ead');
+        var fakeId = new ObjectId().toHexString();
         request(app)
             .get(`/todos/${fakeId}`)
             .expect(404)
             .end(done);
     });
 
-    it('shoudl return 404 for non-object ids', (done) => {
+    it('should return 404 for non-object ids', (done) => {
         // /todos/123
         // get 404 back
         request(app)
