@@ -120,7 +120,7 @@ describe('DELETE /todos/:id', () => {
             .expect((res) => {
                 expect(res.body.todo._id).toBe(hexId);
             })
-            .end((err, res) => {
+            .end((err, res) => { // eslint-disable-line no-unused-vars
                 if (err) {
                     return done(err);
                 }

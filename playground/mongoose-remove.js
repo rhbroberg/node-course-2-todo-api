@@ -1,9 +1,9 @@
-const { ObjectID } = require('mongodb');
+//const { ObjectID } = require('mongodb');
 
-const { mongoose } = require('./../server/db/mongoose');
+const { mongoose } = require('./../server/db/mongoose'); // eslint-disable-line no-unused-vars
 const { Todo } = require('./../server/models/todo');
-const { User } = require('./../server/models/user');
-var userId = '5afe1044630ed53f3c783e40';
+// const { User } = require('./../server/models/user');
+// var userId = '5afe1044630ed53f3c783e40';
 
 
 // // Todo.remove( {} 
