@@ -86,7 +86,7 @@ app.patch('/todos/:id', (req, res) => {
             return res.status(404).send();
         }
         res.send({ todo });
-    }).catch((e) => {
+    }).catch((e) => { // eslint-disable-line no-unused-vars
         res.status(400).send();
     });
 });
