@@ -10,7 +10,7 @@ var authenticate = (req, res, next) => {
         req.user = user;
         req.token = token;
         next();
-    }).catch((e) => {
+    }).catch((e) => { // eslint-disable-line no-unused-vars
         res.status(401).send();
     });
 };

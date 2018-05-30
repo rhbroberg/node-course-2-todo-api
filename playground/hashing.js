@@ -1,4 +1,4 @@
-const { SHA256 } = require('crypto-js');
+const { SHA256 } = require('crypto-js'); // eslint-disable-line no-unused-vars
 const jwt = require('jsonwebtoken');
 
 var data = {
