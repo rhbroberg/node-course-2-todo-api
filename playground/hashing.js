@@ -1,5 +1,5 @@
 const { SHA256 } = require('crypto-js'); // eslint-disable-line no-unused-vars
-const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken'); // eslint-disable-line no-unused-vars
 const bcrypt = require('bcryptjs');
 
 var password = '123abc!';
