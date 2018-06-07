@@ -119,7 +119,7 @@ app.post('/users/login', (req, res) => {
             res.header('x-auth', token).send(user);
         });
     }).catch((e) => { // eslint-disable-line no-unused-vars
-        res.send(400).send();
+        res.status(400).send();
     });
 });
 
