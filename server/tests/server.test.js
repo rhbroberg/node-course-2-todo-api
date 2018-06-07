@@ -296,7 +296,7 @@ describe('POST /users/login', () => {
             .expect((res) => {
                 expect(res.headers['x-auth']).toNotExist();
             })
-            .end((err, res) => {
+            .end((err, res) => { // eslint-disable-line no-unused-vars
                 if (err) {
                     return done(err);
                 }
